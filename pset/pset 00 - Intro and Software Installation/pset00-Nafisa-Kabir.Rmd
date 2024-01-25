@@ -2,8 +2,8 @@
 title: 'S&DS 361 Homework 0: Software Prep'
 date: "Due Tue Jan 23, 2024"
 output:
-  pdf_document: default
   word_document: default
+  pdf_document: default
   html_document: default
 ---
 
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo    = T,
                       fig.width  = 5, 
                       fig.align  = 'center')
 library(knitr)
-
+getwd()
 ```
 
 ## Part 1: Course prep and software installation
@@ -114,16 +114,16 @@ g = ggplot(iris,
   ggtitle("Nafisa Kabir's animation")
 g
 
-a = g + 
-  transition_states(Species,
-                    transition_length = 2,
-                    state_length = 1)
+#a = g + 
+ # transition_states(Species,
+               #     transition_length = 2,
+               #     state_length = 1)
 
 #a  ## check that the animation works
 
 ## save the animation
-anim_save(a, 
-          filename = 'img/test animation.gif')
+#anim_save(a, 
+      #    filename = 'img/test animation.gif')
 
 ```
 
